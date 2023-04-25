@@ -1,5 +1,8 @@
+html, body, #home{
+    height: 100%;
+}
 body{
-    background: url(../img/capa.png);
+    background: #706f6f url(../img/capa.png);
     background-attachment: fixed;
 }
 nav.navbar-transparente{
@@ -20,4 +23,19 @@ nav.navbar-transparente{
     width:1px;
     background: white;
     margin:8px 10px;
+}
+.capa {
+    text-align: center;
+    background: #26859c;
+    height: 350px;
+    width: 700px;
+}
+#home .container .capa h1{
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    margin: 10px;
+    color: #000000;
+}
+#home .container .capa h3{
+
 }

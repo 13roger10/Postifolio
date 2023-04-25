@@ -1,0 +1,23 @@
+body{
+    background: url(../img/capa.png);
+    background-attachment: fixed;
+}
+nav.navbar-transparente{
+    background: rgba(0, 0, 0, 0.26);
+}
+.navbar-light .navbar-nav a.nav-link {
+    color: white;
+    font-size: 1.1em;
+}
+.navbar-light .navbar-nav a.nav-link:hover{
+    color: aqua;
+}
+.navbar-light button.navbar-toggler  {
+    color: rgba(0, 0, 0, 0.5);
+    border-color: white;
+}
+.divisor{
+    width:1px;
+    background: white;
+    margin:8px 10px;
+}

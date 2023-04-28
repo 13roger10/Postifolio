@@ -3,7 +3,8 @@ html, body, #home{
 }
 body{
     font-family: Helvetica, Arial, sans-serif;
-    background: #706f6f url(../img/capa.png);
+    background: url(../img/capa.png),
+            #706f6f ;
     background-attachment: fixed;
 }
 nav.navbar-transparente{
@@ -14,7 +15,7 @@ nav.navbar-transparente{
     font-size: 1.1em;
 }
 .navbar-light .navbar-nav a.nav-link:hover{
-    color: aqua;
+    color: #26859c;
 }
 .navbar-light button.navbar-toggler  {
     color: rgba(0, 0, 0, 0.5);
@@ -25,16 +26,19 @@ nav.navbar-transparente{
     background: white;
     margin:8px 10px;
 }
+a.menu:hover{
+    transform: scale(1.3);
+}
 .capa {
     text-align: center;
     border-radius:50px;
     border:5px double #26859c;
-    background: #0b465583;
+    background: #0b4655b9;
     height: 400px;
     width: 700px;
 }
 .btn-custom{
-    color:rgb(24, 33, 117);
+    color:#182175;
     border-radius: 500px;
     -webkit-border-radius:500px;
     -moz-border-radius:500px;
@@ -44,21 +48,35 @@ nav.navbar-transparente{
 }
 #home .row .btn-roxo{
     background: #26859c;
+    border:2px solid #feffff;
+    color: #ffffff;
     font-weight: 600;
     letter-spacing: -0.05em;
-    color: #0d3d2d;
+    border-radius: 500px;
 }
 #home .row .btn-branco{
-    border:2px solid #26859c;
+    background: #26859c;
+    border:2px solid #fbfeff;
+    color: #ffffff;
     font-weight: 600;
     letter-spacing: -0.05em;
-    color: #0d3d2d;
+    border-radius: 500px;
 }
 #home .row .btn-branco:hover{
-    color: #ffffff;
+    background: #ffffff;
+    border:2px solid #26859c;;
+    color: #26859c;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+    transform: scale(1.2);
 }
 #home .row .btn-roxo:hover{
-    color: #ffffff;
+    background: #ffffff;
+    border:2px solid #26859c;;
+    color: #26859c;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+    transform: scale(1.2);
 }
 #home .container .capa h1{
     font-weight: 700;
@@ -91,6 +109,11 @@ nav.navbar-transparente{
     }
 }
 @media(max-width:992px)and (max-width:1199.98px){
+    .capa{
+        margin-top: 70px;
+        height: 450px;
+        width: 700px;
+    }
     h1{
         font-size: 3em;
     }
